@@ -1,0 +1,5 @@
+let start = ago(7d);
+let end = now();
+Alerts
+| where TimeGenerated >= start and TimeGenerated <= end
+| take 10
